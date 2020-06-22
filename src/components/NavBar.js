@@ -1,11 +1,11 @@
 import React from 'react'
-import {NavLink, Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
  const NavBar = () => {
     return (
         <div className = "NavBar">
-            <NavLink to = "/" exact = {true}></NavLink>
-            <NavLink to = "/Explore" exact = {true}></NavLink>
+            <NavLink className = "NavLink" to = "/" exact = {true}>Home</NavLink>
+            <NavLink className = "NavLink" to = "/Explore" exact = {true}>Explore</NavLink>
         </div>
     )
 }
