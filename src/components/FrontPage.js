@@ -1,5 +1,5 @@
 import React from 'react';
-import CocktailImage from '../Images/kobby-mendez-xBFTjrMIC0c-unsplash.jpg';
+import CocktailImage from '../Images/kim-daniels-p6XuDW03YjE-unsplash.jpg';
 
  const FrontPage = () => {
     return (

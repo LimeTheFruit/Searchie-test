@@ -16,7 +16,7 @@ let cocktails = Drinks.cocktails;
 
     return (
         <React.Fragment>
-            <h1>Find your favorite drink!!! Now!</h1> 
+            <h1>Find your favorite drink!</h1> 
             <input type = "text"></input>
             <button onClick = {search}>Search</button>
             <br/>
@@ -25,7 +25,7 @@ let cocktails = Drinks.cocktails;
                     cocktailsShown.map(i => {
                     return <SearchResult image = {i.image} name = {i.name}/>
                     }) : 
-                    <p>No results found</p>  } 
+                    <p>No results...</p>  } 
             
             </div>
         </React.Fragment>

@@ -9,7 +9,7 @@ import CocktailInfoPage from './components/CocktailInfoPage';
 function App() {
   return (
     <div className="App">
-      
+      <div>
       <BrowserRouter>
       <div>
       <NavBar/>
@@ -26,6 +26,7 @@ function App() {
       </Switch>
       </div>
     </BrowserRouter>
+    </div>
     </div>
   );
 }
