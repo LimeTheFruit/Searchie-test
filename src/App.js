@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Drinks from './data/drinks.json'
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import NavBar from './components/NavBar'
-import FrontPage from './components/FrontPage'
-import ExplorePage from './components/ExplorePage'
+import NavBar from './components/NavBar';
+import FrontPage from './components/FrontPage';
+import ExplorePage from './components/ExplorePage';
+import CocktailInfoPage from './components/CocktailInfoPage';
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
         <Route path = "/Explore" exact = {true}>
           <ExplorePage/>
         </Route>
-        <Route path = "/Explore/:id" exact = {true}>
-
+        <Route path = "/Explore/:id" component= {CocktailInfoPage} >
+         
         </Route>
       </Switch>
       </div>

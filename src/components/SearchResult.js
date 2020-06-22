@@ -5,14 +5,10 @@ import {Link} from 'react-router-dom'
 
     let destination = `/Explore/${name}`;
     return (
-        <div>
-            <Link to = {destination}></Link>
-            <img src = {image}></img> 
-            <input type = "text"></input>
-            <button>Search</button>
-            <div className = "SeachResults">
-                
-            </div>
+        <div className = "SearchItem">
+            <Link className = "SearchItemLink" to = {destination}>{name}</Link>
+            <img src = {image} alt = "ImageOfCocktail"></img> 
+           
         </div>
     )
 }
