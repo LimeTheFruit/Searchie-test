@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import SearchResult from './SearchResult';
+import SearchResultItem from './SearchResultItem';
 import Drinks from '../data/drinks.json'
 
 let cocktails = Drinks.cocktails;
@@ -18,14 +18,14 @@ let cocktails = Drinks.cocktails;
         <React.Fragment>
             <h1>Find your favorite drink!</h1> 
             <div>
-            <input type = "text"></input>
-            <button onClick = {search}>Search</button>
+                <input type = "text"></input>
+                <button onClick = {search}>Search</button>
             </div>
 
             <div className = "SearchResults">
                 {cocktailsShown.length > 1 ? 
                     cocktailsShown.map(i => {
-                    return <SearchResult image = {i.image} name = {i.name}/>
+                    return <SearchResultItem image = {i.image} name = {i.name}/>
                     }) : 
                     <p>No results...</p>  } 
             

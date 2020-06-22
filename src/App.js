@@ -10,21 +10,15 @@ function App() {
   return (
 
       <BrowserRouter>
-      <div className = "App">
-      <div className="AppContent">
-      <NavBar/>
-      <Switch>
-        <Route path = "/" exact = {true}>
-          <FrontPage/>
-        </Route>
-        <Route path = "/Explore" exact = {true}>
-          <ExplorePage/>
-        </Route>
-        <Route path = "/Explore/:id" component= {CocktailInfoPage} >
-         
-        </Route>
-      </Switch>
-      </div>
+      <div className = "AppDimensions">
+        <div className="AppContent">
+          <NavBar/>
+          <Switch>
+            <Route path = "/" component = {FrontPage} exact = {true} />
+            <Route path = "/Explore" component = {ExplorePage} exact = {true} />
+            <Route path = "/Drinks/:id" component= {CocktailInfoPage} />
+          </Switch>
+        </div>
       </div>
     </BrowserRouter>
 
