@@ -8,10 +8,10 @@ import CocktailInfoPage from './components/CocktailInfoPage';
 
 function App() {
   return (
-    <div className="App">
-      <div>
+
       <BrowserRouter>
-      <div>
+      <div className = "App">
+      <div className="AppContent">
       <NavBar/>
       <Switch>
         <Route path = "/" exact = {true}>
@@ -25,9 +25,9 @@ function App() {
         </Route>
       </Switch>
       </div>
+      </div>
     </BrowserRouter>
-    </div>
-    </div>
+
   );
 }
 

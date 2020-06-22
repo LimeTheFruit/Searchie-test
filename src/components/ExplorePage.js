@@ -17,9 +17,11 @@ let cocktails = Drinks.cocktails;
     return (
         <React.Fragment>
             <h1>Find your favorite drink!</h1> 
+            <div>
             <input type = "text"></input>
             <button onClick = {search}>Search</button>
-            <br/>
+            </div>
+
             <div className = "SearchResults">
                 {cocktailsShown.length > 1 ? 
                     cocktailsShown.map(i => {
